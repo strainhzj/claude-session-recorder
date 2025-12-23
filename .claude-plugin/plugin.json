@@ -9,6 +9,5 @@
   "homepage": "https://github.com/claude-plugins/claude-session-recorder",
   "repository": "https://github.com/claude-plugins/claude-session-recorder",
   "license": "MIT",
-  "keywords": ["session", "recording", "history", "cli", "capture"],
-  "hooks": "./hooks/hooks.json"
+  "keywords": ["session", "recording", "history", "cli", "capture"]
 }
