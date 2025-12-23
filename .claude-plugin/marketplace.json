@@ -1,18 +1,21 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "strainhzj",
+  "description": "Claude Code CLI plugins by strainhzj",
   "owner": {
     "name": "strainhzj"
-  },
-  "metadata": {
-    "description": "Claude Code CLI plugins by strainhzj",
-    "homepage": "https://github.com/strainhzj"
   },
   "plugins": [
     {
       "name": "claude-session-recorder",
       "version": "1.0.0",
-      "source": "./",
-      "description": "自动捕获并保存Claude Code CLI的提示词输入和输出结果，支持JSON格式存储和会话管理"
+      "description": "自动捕获并保存Claude Code CLI的提示词输入和输出结果，支持JSON格式存储和会话管理",
+      "author": {
+        "name": "strainhzj"
+      },
+      "source": ".",
+      "category": "productivity",
+      "homepage": "https://github.com/strainhzj/claude-session-recorder"
     }
   ]
 }
