@@ -13,7 +13,7 @@
       "author": {
         "name": "strainhzj"
       },
-      "source": ".",
+      "source": "./",
       "category": "productivity",
       "homepage": "https://github.com/strainhzj/claude-session-recorder"
     }
