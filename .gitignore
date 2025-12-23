@@ -1,0 +1,22 @@
+# Claude Code plugin local settings
+.claude/*.local.md
+
+# Session files (may contain sensitive data)
+sessions/*.json
+!sessions/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if any)
+node_modules/
+
+# Logs
+*.log

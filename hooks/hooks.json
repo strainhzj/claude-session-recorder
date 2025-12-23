@@ -1,0 +1,41 @@
+{
+  "description": "Claude Session Recorder - 自动捕获并保存会话输入输出",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\hooks\scripts\run-hook.sh record-user-input.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\hooks\scripts\run-hook.sh record-tool-result.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\hooks\scripts\run-hook.sh end-session.sh",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

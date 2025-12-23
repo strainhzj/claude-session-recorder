@@ -1,0 +1,2 @@
+# This file ensures the sessions directory is tracked by git
+# Actual session files (.json) are ignored by .gitignore for privacy
