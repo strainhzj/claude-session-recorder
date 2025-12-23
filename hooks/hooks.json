@@ -7,7 +7,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\hooks\scripts\run-hook.sh record-user-input.sh",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\\hooks\\scripts\\run-hook.sh record-user-input.sh",
             "timeout": 10
           }
         ]
@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\hooks\scripts\run-hook.sh record-tool-result.sh",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\\hooks\\scripts\\run-hook.sh record-tool-result.sh",
             "timeout": 10
           }
         ]
@@ -31,7 +31,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\hooks\scripts\run-hook.sh end-session.sh",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}\"\\hooks\\scripts\\run-hook.sh end-session.sh",
             "timeout": 15
           }
         ]
