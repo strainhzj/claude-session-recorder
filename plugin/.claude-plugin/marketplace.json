@@ -1,0 +1,20 @@
+{
+  "id": "claude-session-recorder",
+  "name": "Claude Session Recorder",
+  "version": "2.0.0",
+  "description": "自动捕获并保存Claude Code CLI的会话输入输出 - TypeScript实现",
+  "author": "Claude Session Recorder",
+  "license": "MIT",
+  "keywords": [
+    "session",
+    "recording",
+    "history",
+    "cli",
+    "capture",
+    "typescript",
+    "hooks"
+  ],
+  "homepage": "https://github.com/claude-plugins/claude-session-recorder",
+  "repository": "https://github.com/claude-plugins/claude-session-recorder",
+  "tags": ["productivity", "logging", "session-management"]
+}

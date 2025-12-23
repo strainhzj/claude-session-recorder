@@ -15,8 +15,21 @@ Thumbs.db
 *.swp
 *.swo
 
-# Node modules (if any)
+# Node.js
 node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+hooks-bin/
+*.tsbuildinfo
+
+# Config state files
+config/.current-session
+config/recorder-config.json
 
 # Logs
 *.log
+
+# Spec workflow
+.spec-workflow/

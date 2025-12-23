@@ -1,0 +1,11 @@
+{
+  "autoStart": true,
+  "format": "json",
+  "includeToolResults": true,
+  "includeTimestamps": true,
+  "sessionFile": null,
+  "maxSessionSize": "100MB",
+  "backupEnabled": false,
+  "compressionEnabled": false,
+  "retentionDays": 90
+}

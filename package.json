@@ -1,0 +1,32 @@
+{
+  "name": "claude-session-recorder",
+  "version": "2.0.0",
+  "description": "Claude Code CLI Session Recorder - TypeScript 实现",
+  "type": "module",
+  "author": "Claude Session Recorder Plugin",
+  "license": "MIT",
+  "keywords": ["session", "recording", "history", "cli", "capture", "typescript"],
+  "scripts": {
+    "build": "tsc",
+    "package": "npm run build && npm run package:hooks",
+    "package:hooks": "pkg src/hooks/user-prompt-hook.ts --targets node18-win-x64,node18-linux-x64,node18-macos-x64 --output hooks-bin/user-prompt-hook && pkg src/hooks/tool-result-hook.ts --targets node18-win-x64,node18-linux-x64,node18-macos-x64 --output hooks-bin/tool-result-hook && pkg src/hooks/session-end-hook.ts --targets node18-win-x64,node18-linux-x64,node18-macos-x64 --output hooks-bin/session-end-hook"
+  },
+  "dependencies": {
+    "pathe": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "pkg": "^5.8.1",
+    "typescript": "^5.3.0"
+  },
+  "pkg": {
+    "scripts": ["dist/**/*.js"],
+    "assets": ["config/**/*"],
+    "targets": [
+      "node18-win-x64",
+      "node18-linux-x64",
+      "node18-macos-x64"
+    ],
+    "outputPath": "hooks-bin"
+  }
+}

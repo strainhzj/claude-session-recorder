@@ -7,7 +7,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks-bin/user-prompt-hook\"",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/user-prompt-hook.js\"",
             "timeout": 10
           }
         ]
@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks-bin/tool-result-hook\"",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/tool-result-hook.js\"",
             "timeout": 10
           }
         ]
@@ -31,7 +31,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks-bin/session-end-hook\"",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/session-end-hook.js\"",
             "timeout": 15
           }
         ]
